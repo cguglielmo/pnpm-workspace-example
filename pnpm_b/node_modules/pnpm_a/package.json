@@ -1,0 +1,8 @@
+{
+  "name": "pnpm_a",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
