@@ -1,3 +1,5 @@
-import {A} from "pnpm_a";
+import {HelloJs} from "./Hello";
 
-new A().sayHello();
+new HelloJs().say();
+
+new HelloJs().asyncTask().then(() => console.log('async task finished'))

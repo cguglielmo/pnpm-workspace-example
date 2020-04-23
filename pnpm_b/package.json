@@ -1,15 +1,24 @@
 {
   "name": "pnpm_b",
   "version": "1.0.0",
+  "description": "",
   "main": "src/index.js",
-  "keywords": [],
+  "scripts": {
+    "dev:start": "webpack-dev-server --config webpack.config.js --env.NODE_ENV=development",
+    "dev:build": "webpack --config webpack.config.js --env.NODE_ENV=development",
+    "prod:start": "webpack-dev-server --config webpack.config.js --env.NODE_ENV=production",
+    "prod:build": "webpack --config webpack.config.js --env.NODE_ENV=production"
+  },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "html-webpack-plugin": "^3.2.0"
+  },
   "dependencies": {
+    "@babel/runtime": "^7.9.2",
     "pnpm_a": "1.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "description": ""
+  }
 }
